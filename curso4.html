@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Bases de Datos 1</title>
+</head>
+<body>
+    <header>
+        <h1>Curso de Bases de Datos 1</h1>
+    </header>
+    <div>
+        <section>
+            <h2>Descripción del Curso</h2>
+            <p>El curso de Bases de Datos 1 ofrece una introducción a los principios fundamentales del diseño y manejo de bases de datos. Los estudiantes aprenderán sobre el modelo relacional, el lenguaje SQL, y técnicas de diseño de bases de datos. El curso está diseñado para proporcionar una base sólida en la creación, gestión y consulta de bases de datos, así como en la aplicación de estas habilidades en situaciones prácticas.</p>
+        </section>
+
+        <section>
+            <h2>Objetivos del Curso</h2>
+            <ul>
+                <li>Comprender los principios del modelo relacional de bases de datos.</li>
+                <li>Aprender y aplicar el lenguaje SQL para la manipulación de datos.</li>
+                <li>Diseñar y crear bases de datos relacionales eficaces.</li>
+                <li>Realizar consultas avanzadas y optimizar el rendimiento de las bases de datos.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contenidos del Curso</h2>
+
+            <h3>Unidad 1: Introducción a las Bases de Datos</h3>
+            <p><strong>Conceptos Clave:</strong></p>
+            <ul>
+                <li>Definición y tipos de bases de datos.</li>
+                <li>Modelo relacional y su importancia.</li>
+                <li>Conceptos de entidad, atributo y relación.</li>
+            </ul>
+            <p><strong>Puntos Clave:</strong></p>
+            <ul>
+                <li>Entender las bases de datos y su clasificación.</li>
+                <li>Reconocer los componentes clave del modelo relacional.</li>
+            </ul>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Definición</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Entidad</td>
+                        <td>Objeto o cosa sobre la que se almacena información</td>
+                        <td>Cliente</td>
+                    </tr>
+                    <tr>
+                        <td>Atributo</td>
+                        <td>Característica de una entidad</td>
+                        <td>Nombre del cliente</td>
+                    </tr>
+                    <tr>
+                        <td>Relación</td>
+                        <td>Asociación entre entidades</td>
+                        <td>Compra</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Unidad 2: Diseño de Bases de Datos</h3>
+            <p><strong>Conceptos Clave:</strong></p>
+            <ul>
+                <li>Modelo entidad-relación (ER).</li>
+                <li>Normalización y desnormalización.</li>
+                <li>Diagramas ER y sus componentes.</li>
+            </ul>
+            <p><strong>Puntos Clave:</strong></p>
+            <ul>
+                <li>Diseñar diagramas entidad-relación para representar bases de datos.</li>
+                <li>Aplicar reglas de normalización para evitar redundancias.</li>
+            </ul>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Definición</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Modelo ER</td>
+                        <td>Diagrama que muestra entidades y sus relaciones</td>
+                        <td>Diagrama de relaciones entre clientes y pedidos</td>
+                    </tr>
+                    <tr>
+                        <td>Normalización</td>
+                        <td>Proceso de eliminar redundancias y dependencias</td>
+                        <td>1NF, 2NF, 3NF</td>
+                    </tr>
+                    <tr>
+                        <td>Desnormalización</td>
+                        <td>Introducción de redundancias para optimizar consultas</td>
+                        <td>Combinar tablas para mejorar el rendimiento</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Unidad 3: Lenguaje SQL</h3>
+            <p><strong>Conceptos Clave:</strong></p>
+            <ul>
+                <li>Sentencias básicas: SELECT, INSERT, UPDATE, DELETE.</li>
+                <li>Funciones y operadores SQL.</li>
+                <li>Consultas avanzadas: JOIN, UNION, subconsultas.</li>
+            </ul>
+            <p><strong>Puntos Clave:</strong></p>
+            <ul>
+                <li>Escribir y ejecutar consultas SQL básicas y avanzadas.</li>
+                <li>Utilizar funciones y operadores para manipular datos.</li>
+            </ul>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Sentencia</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SELECT</td>
+                        <td>Selecciona datos de una base de datos</td>
+                        <td>SELECT * FROM clientes;</td>
+                    </tr>
+                    <tr>
+                        <td>INSERT</td>
+                        <td>Inserta nuevos datos en una tabla</td>
+                        <td>INSERT INTO clientes (nombre, email) VALUES ('Juan', 'juan@gmail.com');</td>
+                    </tr>
+                    <tr>
+                        <td>JOIN</td>
+                        <td>Combina filas de dos o más tablas</td>
+                        <td>SELECT * FROM clientes JOIN pedidos ON clientes.id = pedidos.cliente_id;</td>
+                    </tr>
+                    <tr>
+                        <td>UNION</td>
+                        <td>Combina los resultados de dos consultas</td>
+                        <td>SELECT nombre FROM clientes UNION SELECT nombre FROM proveedores;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Unidad 4: Administración de Bases de Datos</h3>
+            <p><strong>Conceptos Clave:</strong></p>
+            <ul>
+                <li>Creación y gestión de usuarios y permisos.</li>
+                <li>Respaldo y recuperación de bases de datos.</li>
+                <li>Optimización del rendimiento y mantenimiento.</li>
+            </ul>
+            <p><strong>Puntos Clave:</strong></p>
+            <ul>
+                <li>Administrar usuarios y permisos de acceso a bases de datos.</li>
+                <li>Implementar estrategias de respaldo y recuperación.</li>
+            </ul>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Usuarios</td>
+                        <td>Administración de cuentas de acceso</td>
+                        <td>CREAR USUARIO 'admin' IDENTIFIED BY 'password';</td>
+                    </tr>
+                    <tr>
+                        <td>Respaldo</td>
+                        <td>Proceso de guardar una copia de la base de datos</td>
+                        <td>BACKUP DATABASE mydb TO DISK = 'backup.bak';</td>
+                    </tr>
+                    <tr>
+                        <td>Optimización</td>
+                        <td>Mejora del rendimiento de las consultas</td>
+                        <td>Uso de índices para acelerar búsquedas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Evaluación</h2>
+            <ul>
+                <li><strong>Exámenes Parciales:</strong> Evaluación de conocimientos teóricos y prácticos.</li>
+                <li><strong>Proyectos y Tareas:</strong> Desarrollo de proyectos prácticos y tareas de consulta SQL.</li>
+                <li><strong>Examen Final:</strong> Evaluación comprensiva de todo el contenido del curso.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Materiales y Recursos</h2>
+            <ul>
+                <li><strong>Libro de Texto:</strong> "Fundamentos de Bases de Datos" por Abraham Silberschatz, Henry Korth y S. Sudarshan.</li>
+                <li><strong>Software:</strong> Sistemas de gestión de bases de datos (MySQL, PostgreSQL, SQLite).</li>
+                <li><strong>Recursos Adicionales:</strong> Tutoriales en línea, documentación SQL, ejercicios prácticos.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
